@@ -1,0 +1,285 @@
+.team {
+  padding-top: 40px;
+  background-color: #f9fafb;
+}
+
+.team-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .team-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-container {
+    padding: 0 2rem;
+  }
+}
+
+.team-header {
+  text-align: center;
+}
+
+.iname {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.team-subtitle {
+  padding-bottom: 20px;
+  color: #6c757d;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Mobile: 1 column */
+@media (min-width: 640px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet: 2-3 columns */
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop: 4 team members in first row, supervisor centered in second row */
+@media (min-width: 1024px) {
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* First 4 members take up the first row normally */
+  .team-card:nth-child(1),
+  .team-card:nth-child(2),
+  .team-card:nth-child(3),
+  .team-card:nth-child(4) {
+    grid-column: auto;
+  }
+  
+  /* Supervisor (5th member) centered in second row */
+  .team-card:nth-child(5) {
+    grid-column: 2 / 4;
+    justify-self: center;
+    margin-top: 1rem;
+  }
+}
+
+/* Alternative layout for very large screens */
+@media (min-width: 1400px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+  }
+  
+  /* Keep the same layout - 4 in first row, supervisor centered in second */
+  .team-card:nth-child(5) {
+    grid-column: 2 / 4;
+    justify-self: center;
+    margin-top: 1rem;
+  }
+}
+
+.team-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+}
+
+.team-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-5px);
+}
+
+.team-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-image {
+  transform: scale(1.1);
+}
+
+.team-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-card:hover .team-image-overlay {
+  opacity: 1;
+}
+
+.team-content {
+  padding: 1.5rem;
+}
+
+.team-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.team-role {
+  color: #69696a;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team-bio {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.team-social-links {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.social-link.portfolio {
+  background-color: #e0e7ff;
+  color: #4f46e5;
+}
+
+.social-link.portfolio:hover {
+  background-color: #4f46e5;
+  color: white;
+  transform: scale(1.1);
+}
+
+.social-link.github {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.social-link.github:hover {
+  background-color: #374151;
+  color: white;
+  transform: scale(1.1);
+}
+
+.social-link.linkedin {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.social-link.linkedin:hover {
+  background-color: #2563eb;
+  color: white;
+  transform: scale(1.1);
+}
+
+.social-link.email {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.social-link.email:hover {
+  background-color: #16a34a;
+  color: white;
+  transform: scale(1.1);
+}
+
+.team-cta {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.team-cta-text {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.team-cta-button {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team-cta-button:hover {
+  background: linear-gradient(135deg, #4338ca, #6d28d9);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+}
+
+/* Animation for cards on load */
+.team-card {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.team-card:nth-child(1) { animation-delay: 0.1s; }
+.team-card:nth-child(2) { animation-delay: 0.2s; }
+.team-card:nth-child(3) { animation-delay: 0.3s; }
+.team-card:nth-child(4) { animation-delay: 0.4s; }
+.team-card:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

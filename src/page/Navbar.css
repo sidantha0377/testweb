@@ -1,0 +1,57 @@
+/* Navbar container */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #1d1d2d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo or Brand Name */
+.securx {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fdfdfd;
+}
+
+/* Nav list */
+.navlist {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav list items */
+.navlist li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* Hover effect */
+.navlist li a:hover {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+}
+
+/* Optional: Responsive collapse */
+@media (max-width: 768px) {
+  .navlist {
+    flex-direction: column;
+    background-color: #1e1e2f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    display: none; /* You can control this with JS for toggle */
+  }
+}

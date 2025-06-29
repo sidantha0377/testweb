@@ -1,0 +1,36 @@
+.hard{
+    padding: 70px;
+}
+.iname{
+    text-align: center;
+ font-size: 30px;
+ font-weight: bold;
+ padding-bottom: 10px;
+}
+
+.project-structure {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #cececedd;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+}
+
+.project-structure h4 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.project-structure ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-structure ul li {
+  margin-bottom: 0.5rem;
+}
