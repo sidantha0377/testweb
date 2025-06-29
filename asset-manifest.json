@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5235e75d.css",
+    "main.js": "/static/js/main.70227b62.js",
+    "static/js/453.a1c65235.chunk.js": "/static/js/453.a1c65235.chunk.js",
+    "static/media/main.jpg": "/static/media/main.88f30847de5a54b5f8bb.jpg",
+    "static/media/E20212.jpg": "/static/media/E20212.62d54a11825038b9e1a5.jpg",
+    "static/media/fronttest.png": "/static/media/fronttest.92368e36be0b9b10c418.png",
+    "static/media/back test.png": "/static/media/back test.7eea7ee6368e041f4dbc.png",
+    "static/media/E20350.jpg": "/static/media/E20350.14de1e0d13345863f769.jpg",
+    "static/media/isuru-nawinne.png": "/static/media/isuru-nawinne.aa9614206e67780418a6.png",
+    "static/media/E20036.jpg": "/static/media/E20036.d7d60e9c7850e6e90735.jpg",
+    "static/media/hadtest.png": "/static/media/hadtest.60cec7ac55c1f5a32a8e.png",
+    "static/media/E20377.jpg": "/static/media/E20377.3ae666d8c05fbbc13b37.jpg",
+    "static/media/TechStack.jpg": "/static/media/TechStack.5964a8601ac7f5c01612.jpg",
+    "static/media/HighLevelArchitecture.jpg": "/static/media/HighLevelArchitecture.ba51f823463bcfbd4558.jpg",
+    "index.html": "/index.html",
+    "main.5235e75d.css.map": "/static/css/main.5235e75d.css.map",
+    "main.70227b62.js.map": "/static/js/main.70227b62.js.map",
+    "453.a1c65235.chunk.js.map": "/static/js/453.a1c65235.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5235e75d.css",
+    "static/js/main.70227b62.js"
+  ]
+}
